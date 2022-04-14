@@ -4,7 +4,7 @@ import threading
 from chat_message import ChatMessage
 
 class ChatServer:
-    def __init__(self, host='127.0.0.1', port=1234, buffer_size=1024):
+    def __init__(self, host='0.0.0.0', port=1234, buffer_size=1024):
         self.clients = []
         self.host = host  # the server's host name or IP address
         self.port = port  # the port used by the server
